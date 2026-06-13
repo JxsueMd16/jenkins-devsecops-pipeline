@@ -10,6 +10,8 @@ Pipeline DevSecOps completo en Jenkins con 6 etapas: desde checkout hasta Securi
 Checkout → Install & Build → Test E2E → SCA → Container Scan → DAST → Security Gate
 ```
 
+![Pipeline](assets/pipeline-diagram.png)
+
 | Etapa | Herramienta | Descripción |
 |---|---|---|
 | Checkout | Git | Clona el repositorio |
@@ -67,6 +69,7 @@ Severidades monitoreadas: `HIGH`, `CRITICAL`
 Los tests E2E de la etapa **Test E2E** se ejecutan desde [cypress-e2e-suite](https://github.com/JxsueMd16/cypress-e2e-suite). La imagen Docker escaneada en **Container Scan** usa la infraestructura de [docker-infra](https://github.com/JxsueMd16/docker-infra).
 
 ---
+
 
 ## Contacto
 
